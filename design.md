@@ -21,7 +21,7 @@ This file defines the visual design system for my Duke of Edinburgh Skills proje
 | Type | Font | Use |
 |------|-------|-----|
 | Headings | Poppins, sans-serif | Section titles |
-| Body | Roboto, sans-serif | Main text |
+| Body | Comfortaa, sans-serif | Main text |
 
 **Example CSS**
 ```css
