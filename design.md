@@ -29,5 +29,5 @@ h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Comfortaa', sans-serif;
 }
