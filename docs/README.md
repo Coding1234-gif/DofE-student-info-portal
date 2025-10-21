@@ -20,5 +20,5 @@ I’m building a website/app that helps secondary school students with:
 - Month 1–6: Feature building and learning  
 
 ## DofE Log
-All weekly learning summaries and screenshots will be uploaded to a `/logs` folder.
+All weekly learning summaries and screenshots will be uploaded to a 'DofE-log' file.
 
