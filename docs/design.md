@@ -8,7 +8,7 @@ This file defines the visual design system for my Duke of Edinburgh Skills proje
 
 | Role | Color | Hex Code | Usage |
 |------|--------|-----------|--------|
-| Primary | Steel Blue | '4682B4' | Fill for Important Buttons, Navbar background |
+| Primary | French Blue & Steel Blue | '0072BB' and '4682B4' | Fill for Important Buttons, Navbar background |
 | Secondary | Teal Green | '006DB5' | Text + Border for Normal Buttons, Highlights, Notifications |
 | Background | White | 'FFFFFF' | Page background |
 | Text | Charcoal Grey | '3C4142' | Body text |
