@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>DofE Student Info Portal</title>
-    <link href="../styles/stylesheet.css" rel="stylesheet">
+    <link href="../css/stylesheet.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
@@ -16,17 +16,30 @@
         <h2>Ready to start learning?</h2>
     </header>
     <nav id="primary-nav">
-        <a href="index.html">
-            <button class='main-button' type="button">Home</button>
-        </a>
-        <a href="quiz.html">
-            <button class='main-button' type="button">GCSE quiz questions</button>
-        </a>
-        <a href="news.html">
-            <button class='main-button' type="button">News feed</button>
-        </a>
+        <div class="button-conatiner">
+            <a href="index.html">
+                <button class='main-button' type="button">Home</button>
+            </a>
+            <a href="quiz.html">
+                <button class='main-button' type="button">GCSE quiz questions</button>
+            </a>
+            <a href="news.html">
+                <button class='main-button' type="button">News feed</button>
+            </a>
+            <a href="news_sports.html"></a>
+                <button class='main-button' type="button">Sports news</button>
+            </a>
+            <a href="news_general.html"></a>
+                <button class='main-button' type="button">General news</button>
+            </a>
+            <a href="news_school.html"></a>
+                <button class='main-button' type="button">School news</button>
+            </a>
+        </div>
     </nav>
     <main>
+        <h3>News</h3>
+        <div id="news-container"></div>
         <h2>DofE Student Info Portal</h2>
         <p>This page will be for the news feed (for either school-related news, general news or the user's chosen news topics). 
             This is a work in progress and will be updated regularly.
@@ -35,8 +48,8 @@
     <footer>
         DofE Student Info Portal - 2025 - <a href="https://github.com/Coding1234-gif/DofE-student-info-portal" target="_blank">GitHub</a>
     </footer>
-    <script src="../scripts/main.js"></script>
-    <script src="../scripts/news.js"></script>
+    <script src="../javascript/main.js"></script>
+    <script src="../javascript/news.js"></script>
 </body>
 
 </html>
