@@ -20,3 +20,10 @@
 **Hours spent: 1hr15mins**  
 **What I did: Styled buttons for HTML pages with CSS, linked pages together, created sample questions for quiz, started quiz page logic**  
 **What I learned: Styling classes, IDs, padding, border, changing the cursor and the hover attribute in CSS. JSON objects. Javascript basics**
+
+## Month 1 Week 3
+
+**Date: Sun 9th Nov 2025**  
+**Hours spent: 1hr**  
+**What I did: Created cards (reusable base code) for news + quiz pages, made sample news, started news page logic (JS), styled buttons with CSS, linked news pages to main news page**  
+**What I learned: JSON Objects. How to use Flexbox in CSS, e.g. wrap, justify-content and what they do. Fetching and displaying data in Javascript**
