@@ -1,5 +1,14 @@
 var newsContainer = document.getElementById('news-container');
+const toggleButtons = document.querySelectorAll('.toggle-btn');
+const toggleContents = document.querySelectorAll('.toggle-content');
 var newsData = [];
+
+toggleButtons.forEach(button => {
+    button.addEventListener('click', handleToggleClick);
+});
+if (toggleButtons.length > 0) {
+    toggleButtons[0].click();
+}
 
 async function loadNews() {
     try {
@@ -9,6 +18,17 @@ async function loadNews() {
         displayNews();
     } catch (error) {
         console.error('Error loading news data:', error);
+    }
+}
+
+function handleToggleClick(event) {
+    toggleButtons.forEach(button => button.classList.remove('active'));
+    toggleContents.forEach(content => content.style.display = 'none');
+    event.target.classList.add('active');
+    const targetId = event.target.dataset.target;
+    const targetSection = document.getElementById(targetId);
+    if (targetSection) {
+        targetSection.style.display = 'block';
     }
 }
 
@@ -24,3 +44,5 @@ function displayNews() {
         `;
     });
 }
+
+loadNews();
