@@ -1,37 +1,68 @@
 [
-    {
-      "title": "GCSE Results 2025 Released", 
-      "summary": "Students celebrate across the UK.",
-      "link": "#"
-    },
-    {
-      "title": "STEM Challenge 2025 Opens",
-      "summary": "A new competition for young engineers.",
-      "link": "#"
-    },
-    {
-      "title": "New school year begins", 
-      "summary": "Students return to school after the summer holidays.", 
-      "link": "#"
-    },
-    {
-      "title": "NSS Space Settlement Competition Opens for Entries", 
-      "summary": "A new competition for young space engineers to design a space settlement for future generations.", 
-      "link": "#"
-    },
-    {
-      "title": "A Level Results 2025 Released", 
-      "summary": "Students celebrate across the UK.", 
-      "link": "#"
-    },
-    {
-      "title": "Petition to reduce school week to four days gains momentum", 
-      "summary": "A new petition to reduce the school week to four days is slowly accelerating.", 
-      "link": "#"
-    },
-    {
-      "title": "Applications to university open for classes of 2029", 
-      "summary": "Applications open for university courses starting in September 2029.", 
-      "link": "#"
-    }
+  {
+    "title": "GCSE Results 2025 Released",
+    "summary": "Students celebrate across the UK.",
+    "link": "#",
+    "category": "school"
+  },
+  {
+    "title": "STEM Challenge 2025 Opens",
+    "summary": "A new competition for young engineers.",
+    "link": "#",
+    "category": "school"
+  },
+  {
+    "title": "New school year begins",
+    "summary": "Students return to school after the summer holidays.",
+    "link": "#",
+    "category": "school"
+  },
+  {
+    "title": "NSS Space Settlement Competition Opens for Entries",
+    "summary": "A new competition for young space engineers to design a space settlement for future generations.",
+    "link": "#",
+    "category": "school"
+  },
+  {
+    "title": "A Level Results 2025 Released",
+    "summary": "Students celebrate across the UK.",
+    "link": "#",
+    "category": "school"
+  },
+  {
+    "title": "Petition to reduce school week to four days gains momentum",
+    "summary": "A new petition to reduce the school week to four days is slowly accelerating.",
+    "link": "#",
+    "category": "school"
+  },
+  {
+    "title": "Applications to university open for classes of 2029",
+    "summary": "Applications open for university courses starting in September 2029.",
+    "link": "#",
+    "category": "school"
+  },
+  {
+    "title": "Forest beat Liverpool to advance to 16th in Premier League",
+    "summary": "Nottingham Forest beat Liverpool 3-0, adding to their bad spell this season.",
+    "link": "#",
+    "category": "sports"
+  },
+  {
+    "title": "England suffer defeat to Australia",
+    "summary": "Australia fight back to win the 1st Ashes test by 8 wickets.",
+    "link": "#",
+    "category": "sports"
+  },
+  {
+    "title": "Ukraine president Zelensky says they risk losing US support",
+    "summary": "He says the US is a key partner in the war against Russia.",
+    "link": "#",
+    "category": "general"
+  },
+  {
+    "title": "COP30 bitterly contested but keeps world in fight with climate change",
+    "summary": "COP30, the UN Climate Conference, just barely kept the world in the fight against climate change.",
+    "link": "#",
+    "category": "general"
+  }
 ]

@@ -1,6 +1,5 @@
 var newsContainer = document.getElementById('news-container');
 const toggleButtons = document.querySelectorAll('.toggle-btn');
-const toggleContents = document.querySelectorAll('.toggle-content');
 var newsData = [];
 
 toggleButtons.forEach(button => {
@@ -15,28 +14,26 @@ async function loadNews() {
         const response = await fetch('../../data/sample-news.json');
         newsData = await response.json();
         console.log('News data loaded:', newsData);
-        displayNews();
+        displayNews("all");
     } catch (error) {
         console.error('Error loading news data:', error);
     }
 }
 
 function handleToggleClick(event) {
-    toggleButtons.forEach(button => button.classList.remove('active'));
-    toggleContents.forEach(content => content.style.display = 'none');
-    event.target.classList.add('active');
-    const targetId = event.target.dataset.target;
-    const targetSection = document.getElementById(targetId);
-    if (targetSection) {
-        targetSection.style.display = 'block';
-    }
+    const button = event.target;
+    const filter = button.dataset.filter;
+    toggleButtons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+    displayNews(filter);
 }
 
-function displayNews() {
+function displayNews(filterCategory) {
     newsContainer.innerHTML = "";
-    newsData.forEach(news => {
+    const filteredNews = newsData.filter(item => filterCategory === "all" || item.category === filterCategory);
+    filteredNews.forEach(news => {
         newsContainer.innerHTML += `
-            <div class="news-card">
+            <div class="news-card" data-category="${news.category}">
                 <h3>${news.title}</h3>
                 <p>${news.summary}</p>
                 <a href="${news.link}" target="_blank">Read More</a>
