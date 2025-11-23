@@ -25,7 +25,7 @@
 
 **Date: Sun 9th Nov 2025**  
 **Hours spent: 1hr**  
-**What I did: Created cards (reusable base code) for news + quiz pages, made sample news, started news page logic (JS), styled buttons with CSS, linked news pages to main news page**  
+**What I did: Created cards (reusable base code) for news + quiz pages, made sample news, started news page logic (JS), styled buttons with CSS**  
 **What I learned: JSON Objects. How to use Flexbox in CSS, e.g. wrap, justify-content and what they do. Fetching and displaying data in Javascript**
 
 ## Month 1 Week 4
@@ -34,3 +34,10 @@
 **Hours spent: 1hr**  
 **What I did: Coninued news page Javascript, made JS toggle for news page, styled toggle with CSS, added to main.js**  
 **What I learned: How to make a Javascript toggle (same page, hiding and displaying data), animations in CSS (keyframes, animation)**
+
+## Month 2 Week 1
+
+**Date: Sun 23rd Nov 2025**  
+**Hours spent: 1hr**  
+**What I did: Coninued news page Javascript, implemented logic for JS toggle to work, made more sample news**  
+**What I learned: Logic for a Javascript toggle (same page, hiding and displaying data), filter function in JS, data- attribute in HTML**
