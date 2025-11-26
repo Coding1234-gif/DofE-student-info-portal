@@ -28,15 +28,30 @@
     </nav>
     <main>
         <h3>GCSE Daily Quiz</h3>
+        <div class="quiz-select">
+            <select id="topic-select" onchange="selectTopic()">
+                <option value="all">All Topics</option>
+                <option value="maths">Maths</option>
+                <option value="english">English</option>
+                <option value="science">Science</option>
+                <option value="history">History</option>
+                <option value="geography">Geography</option>
+                <option value="biology">Biology</option>
+                <option value="chemistry">Chemistry</option>
+                <option value="physics">Physics</option>
+            </select>
+        </div>
         <div id="quiz"></div>
         <div id="results"></div>
         <h2>DofE Student Info Portal</h2>
-        <p>This page will be for the GCSE quiz questions. There will be a few each day, and the user chooses the topics and amount of questions.
+        <p>This page will be for the GCSE quiz questions. There will be a few each day, and the user chooses the topics
+            and amount of questions.
             This is a work in progress and will be updated regularly.
         </p>
     </main>
     <footer>
-        DofE Student Info Portal - 2025 - <a href="https://github.com/Coding1234-gif/DofE-student-info-portal" target="_blank">GitHub</a>
+        DofE Student Info Portal - 2025 - <a href="https://github.com/Coding1234-gif/DofE-student-info-portal"
+            target="_blank">GitHub</a>
     </footer>
     <script src="../javascript/main.js"></script>
     <script src="../javascript/quiz.js"></script>

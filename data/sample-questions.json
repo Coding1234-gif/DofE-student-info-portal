@@ -1,32 +1,38 @@
 [
-    {
-      "question": "What is the capital of France?",
-      "answers": ["Berlin", "Madrid", "Paris", "Rome"],
-      "correctAnswer": "Paris"
-    },
-    {
-      "question": "Which planet is known as the Red Planet?",
-      "answers": ["Earth", "Mars", "Jupiter", "Venus"],
-      "correctAnswer": "Mars"
-    },
-    {
-      "question": "What is the capital of Germany?",
-      "answers": ["Berlin", "Madrid", "Paris", "Rome"],
-      "correctAnswer": "Berlin"
-    },
-    {
-      "question": "What is the capital of Italy?",
-      "answers": ["Berlin", "Madrid", "Paris", "Rome"],
-      "correctAnswer": "Rome"
-    },
-    {
-      "question": "What is the capital of Spain?",
-      "answers": ["Berlin", "Madrid", "Paris", "Rome"],
-      "correctAnswer": "Madrid"
-    },
-    {
-      "question": "If x+1/x = 4, what is x^2+1/x^2?",
-      "answers": [12,14,16,18],
-      "correctAnswer": 14
-    }
-  ]
+  {
+    "question": "What is the capital of France?",
+    "answers": ["Berlin","Madrid","Paris","Rome"],
+    "correctAnswer": "Paris",
+    "topic": "geography"
+  },
+  {
+    "question": "Which planet is known as the Red Planet?",
+    "answers": ["Earth","Mars","Jupiter","Venus"],
+    "correctAnswer": "Mars",
+    "topic": "science"
+  },
+  {
+    "question": "What is the capital of Germany?",
+    "answers": ["Berlin","Madrid","Paris","Rome"],
+    "correctAnswer": "Berlin",
+    "topic": "geography"
+  },
+  {
+    "question": "What is the capital of Italy?",
+    "answers": ["Berlin","Madrid","Paris","Rome"],
+    "correctAnswer": "Rome",
+    "topic": "geography"
+  },
+  {
+    "question": "What is the capital of Spain?",
+    "answers": ["Berlin","Madrid","Paris","Rome"],
+    "correctAnswer": "Madrid",
+    "topic": "geography"
+  },
+  {
+    "question": "If x+1/x = 4, what is x^2+1/x^2?",
+    "answers": [12,14,16,18],
+    "correctAnswer": 14,
+    "topic": "maths"
+  }
+]

@@ -17,9 +17,22 @@ async function loadQuiz() { //async means it can run in the background without f
     }
 }
 
+function selectTopic() {
+    const topicSelect = document.getElementById("topic-select");
+    const topic = topicSelect.value;
+    if (topic === "all") {
+        filteredQuestions = [...quizData];  // clone all
+    } else {
+        filteredQuestions = quizData.filter(q => q.topic === topic);
+    }
+    currentQuestionIndex = 0;
+    score = 0;
+    displayQuestion();
+}
+
 function displayQuestion() { //new function
-    if (currentQuestionIndex < quizData.length) { //if question number < total number of questions
-        const question = quizData[currentQuestionIndex]; //question = 'currentQuestionIndex'th question in quizData
+    if (currentQuestionIndex < filteredQuestions.length) { //if question number < total number of questions
+        const question = filteredQuestions[currentQuestionIndex]; //question = 'currentQuestionIndex'th question in quizData
         quizContainer.innerHTML = ''; //empties HTML inside quizContainer
         quizContainer.innerHTML = ` 
             <div class='quiz-question'>
@@ -31,7 +44,7 @@ function displayQuestion() { //new function
         `; //puts new HTML in quizContainer. The ${} is similar to f{} in Python. question.question is the question
             // and question.answers are the answers in the current JSON object. The .join('') joins the array of buttons/answers into one string.
         document.querySelectorAll('.quiz-button').forEach(button => //selects all with class 'quiz-button'.
-        {button.addEventListener('click',selectAnswer)}); //When button is clicked, checkAnswer function runs. (45 and 46 all on 1 line). 
+        {button.addEventListener('click',selectAnswer)}); //When button is clicked, selectAnswer function runs. (45 and 46 all on 1 line). 
     } else {
         displayResults();
     }
@@ -40,7 +53,7 @@ function displayQuestion() { //new function
 function selectAnswer(event) {
     const selectedButton = event.target;
     const selectedAnswer = selectedButton.dataset.answer;
-    const currentQuestion = quizData[currentQuestionIndex];
+    const currentQuestion = filteredQuestions[currentQuestionIndex];
     if (selectedAnswer === String(currentQuestion.correctAnswer)) { //if answer is correct
         score++;
         selectedButton.classList.add('correct'); //adds to class 'correct' for CSS
@@ -63,7 +76,7 @@ function displayResults() {
     quizContainer.innerHTML = '';
     resultsContainer.innerHTML = `
         <h2>Quiz Completed!</h2>
-        <p>You scored ${score} out of ${quizData.length} questions.</p>
+        <p>You scored ${score} out of ${filteredQuestions.length} questions.</p>
         <button id='restart-button' class='quiz-button' type='button'>Restart Quiz</button>
     `;
     document.getElementById('restart-button').addEventListener('click',() => {
@@ -77,4 +90,6 @@ function displayResults() {
 }
 
 loadQuiz();
+
+
 
