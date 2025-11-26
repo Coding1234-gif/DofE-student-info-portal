@@ -39,5 +39,5 @@
 
 **Date: Sun 23rd Nov 2025**  
 **Hours spent: 1hr**  
-**What I did: Coninued news page Javascript, implemented logic for JS toggle to work, made more sample news**  
-**What I learned: Logic for a Javascript toggle (same page, hiding and displaying data), filter function in JS, data- attribute in HTML**
+**What I did: Coninued news page Javascript, implemented logic for JS toggle to work, made more sample news, addedtopics/caetgories to news page**  
+**What I learned: Logic for a Javascript toggle (same page, hiding and displaying data), filter function in JS, data- attribute in HTML, select in HTML**
