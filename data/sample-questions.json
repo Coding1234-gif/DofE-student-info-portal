@@ -9,7 +9,7 @@
     "question": "Which planet is known as the Red Planet?",
     "answers": ["Earth","Mars","Jupiter","Venus"],
     "correctAnswer": "Mars",
-    "topic": "science"
+    "topic": "physics"
   },
   {
     "question": "What is the capital of Germany?",
@@ -34,5 +34,29 @@
     "answers": [12,14,16,18],
     "correctAnswer": 14,
     "topic": "maths"
+  },
+  {
+    "question": "Which figurative language device is used in the following sentence: 'The sun was a blazing furnace'?",
+    "answers": ["Simile","Metaphor","Personification","Alliteration"],
+    "correctAnswer": "Metaphor",
+    "topic": "english"
+  },
+  {
+    "question": "When was the Battle of Hastings?",
+    "answers": ["1066","1067","1068","1069"],
+    "correctAnswer": "1066",
+    "topic": "history"
+  },
+  {
+    "question": "What is the largest internalorgan in the human body?",
+    "answers": ["Heart","Brain","Liver","Stomach"],
+    "correctAnswer": "Liver",
+    "topic": "biology"
+  },
+  {
+    "question": "What is the chemical symbol for sodium?",
+    "answers": ["Na","K","Ca","Mg"],
+    "correctAnswer": "Na",
+    "topic": "chemistry"
   }
 ]

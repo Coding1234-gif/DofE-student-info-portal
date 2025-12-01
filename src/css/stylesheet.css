@@ -115,6 +115,10 @@ body {
     color: #dc3545;
 }
 
+.streak {
+    margin-top: 20px;
+}
+
 .news-button {
     flex: 1 1 45%;
     min-width: 120px;

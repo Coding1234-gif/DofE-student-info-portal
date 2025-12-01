@@ -15,15 +15,16 @@ async function loadQuiz() { //async means it can run in the background without f
     } catch (error) {
         console.error('Error loading quiz data:', error); //displays if there is an error
     }
+    document.getElementById("streak").innerHTML = "";
 }
 
 function selectTopic() {
     const topicSelect = document.getElementById("topic-select");
     const topic = topicSelect.value;
     if (topic === "all") {
-        filteredQuestions = [...quizData];  // clone all
+        filteredQuestions = [...quizData];  //shows all questions when 'all' selected
     } else {
-        filteredQuestions = quizData.filter(q => q.topic === topic);
+        filteredQuestions = quizData.filter(q => q.topic === topic); //shows questions of selected topic
     }
     currentQuestionIndex = 0;
     score = 0;
@@ -44,7 +45,7 @@ function displayQuestion() { //new function
         `; //puts new HTML in quizContainer. The ${} is similar to f{} in Python. question.question is the question
             // and question.answers are the answers in the current JSON object. The .join('') joins the array of buttons/answers into one string.
         document.querySelectorAll('.quiz-button').forEach(button => //selects all with class 'quiz-button'.
-        {button.addEventListener('click',selectAnswer)}); //When button is clicked, selectAnswer function runs. (45 and 46 all on 1 line). 
+        {button.addEventListener('click',selectAnswer)}); //When button is clicked, selectAnswer function runs. (46 and 47 all on 1 line). 
     } else {
         displayResults();
     }
@@ -72,7 +73,29 @@ function selectAnswer(event) {
     }, 1000); //code will run after 1000 milliseconds
 }
 
+function updateStreak() {
+    const today = new Date().toDateString(); //gets today's date
+    const lastDate = localStorage.getItem("lastQuizDate"); //gets last date
+    if (lastDate !== today) {
+        if (lastDate === null) { //if first time doing quiz (no last date)
+            localStorage.setItem("streak", 1); //sets streak to 1
+        } else {
+            const diff = (new Date(today) - new Date(lastDate)) / (1000*60*60*24); //gets difference in days (1 day = 1000*60*60*24 milliseconds)
+            if (diff === 1) { //if quiz done yesterday
+                let current = parseInt(localStorage.getItem("streak") || "1"); //converts streak to integer, if streak not found set to 1
+                localStorage.setItem("streak", current + 1); //updates streak (+1)
+            } else {
+                localStorage.setItem("streak", 1); //resets streak to 1
+            }
+        }
+        localStorage.setItem("lastQuizDate", today); //stores today's date
+    }
+    document.getElementById("streak").innerHTML = "Streak: " + localStorage.getItem("streak") + " days";
+}
+
 function displayResults() {
+    updateStreak();
+
     quizContainer.innerHTML = '';
     resultsContainer.innerHTML = `
         <h2>Quiz Completed!</h2>
@@ -86,7 +109,6 @@ function displayResults() {
         resultsContainer.innerHTML = ''; //clear previous results
         loadQuiz(); //load new quiz
     });
-    
 }
 
 loadQuiz();
