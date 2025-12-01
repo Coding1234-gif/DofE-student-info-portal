@@ -39,12 +39,12 @@
 
 **Date: Sun 23rd Nov 2025**  
 **Hours spent: 1hr**  
-**What I did: Coninued news page Javascript, implemented logic for JS toggle to work, made more sample news, addedtopics/caetgories to news page**  
+**What I did: Coninued news page Javascript, implemented logic for JS toggle to work, made more sample news, added topics/categories to news page**  
 **What I learned: Logic for a Javascript toggle (same page, hiding and displaying data), filter function in JS, data- attribute in HTML, select in HTML**
 
 ## Month 2 Week 2
 
 **Date: Sun 30th Nov 2025**  
 **Hours spent: 1hr**  
-**What I did: Added streak tracker to quiz page with date tracking, finished sample questions (JSON), researched APIs and got ideas on which to use, e.g. for news and quiz**  
+**What I did: Added streak tracker to quiz page with date tracking, added topics to quiz page, finished sample questions (JSON), researched APIs and got ideas on which to use**  
 **What I learned: localStorage and its functions in JS, JS Date objects, parsing in JS, features of various APIs**
