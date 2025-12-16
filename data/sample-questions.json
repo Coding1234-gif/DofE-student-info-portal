@@ -48,7 +48,7 @@
     "topic": "history"
   },
   {
-    "question": "What is the largest internalorgan in the human body?",
+    "question": "What is the largest internal organ in the human body?",
     "answers": ["Heart","Brain","Liver","Stomach"],
     "correctAnswer": "Liver",
     "topic": "biology"

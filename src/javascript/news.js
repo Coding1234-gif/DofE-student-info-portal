@@ -1,6 +1,7 @@
-var newsContainer = document.getElementById('news-container');
+const api_key = "f35021025f6b49af999e69d7aa095081";
+const newsContainer = document.getElementById('news-container');
 const toggleButtons = document.querySelectorAll('.toggle-btn');
-var newsData = [];
+let newsData = [];
 
 toggleButtons.forEach(button => {
     button.addEventListener('click', handleToggleClick);
@@ -9,12 +10,16 @@ if (toggleButtons.length > 0) {
     toggleButtons[0].click();
 }
 
-async function loadNews() {
+async function loadNews(category = "general") {
+    const response = await fetch(`https://newsapi.org/v2/top-headlines?category=${category}&apiKey=${api_key}`);
     try {
-        const response = await fetch('../../data/sample-news.json');
-        newsData = await response.json();
+        const newsData = await response.json();
         console.log('News data loaded:', newsData);
-        displayNews("all");
+        if (newsData.articles) {
+            displayNews(newsData.articles.slice(0, 8));
+        } else {
+            console.error('No articles found in response');
+        }
     } catch (error) {
         console.error('Error loading news data:', error);
     }
@@ -25,18 +30,19 @@ function handleToggleClick(event) {
     const filter = button.dataset.filter;
     toggleButtons.forEach(btn => btn.classList.remove('active'));
     button.classList.add('active');
-    displayNews(filter);
+    loadNews(filter);
 }
 
-function displayNews(filterCategory) {
+function displayNews(articles) {
     newsContainer.innerHTML = "";
-    const filteredNews = newsData.filter(item => filterCategory === "all" || item.category === filterCategory);
-    filteredNews.forEach(news => {
+    articles.forEach(news => {
         newsContainer.innerHTML += `
-            <div class="news-card" data-category="${news.category}">
+            <div class="news-card">
                 <h3>${news.title}</h3>
-                <p>${news.summary}</p>
-                <a href="${news.link}" target="_blank">Read More</a>
+                <p>${news.source.name}</p>
+                <p>By ${news.author || 'Unknown author'}</p>
+                <p>${news.description || 'No description available.'}</p>
+                <a href="${news.url}" target="_blank">Read More</a>
             </div>
         `;
     });
