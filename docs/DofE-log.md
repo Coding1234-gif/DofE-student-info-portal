@@ -48,3 +48,10 @@
 **Hours spent: 1hr**  
 **What I did: Added streak tracker to quiz page with date tracking, finished sample questions (JSON), researched APIs and got ideas on which to use**  
 **What I learned: localStorage and its functions in JS, JS Date objects, parsing in JS, features of various APIs**
+
+## Month 2 Week 3
+
+**Date: Sun 14th Dec 2025**  
+**Hours spent: 1hr**  
+**What I did: Continued researching APIs, decided on API for news - News API, called real news from API with query parameters in JS**  
+**What I learned: Query parameters for News API, how to manipulate and use the API and JSON data/response, how to create URLs with query parameters**
