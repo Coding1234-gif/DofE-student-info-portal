@@ -67,20 +67,19 @@
 
 **Date: Sun 1st Mar 2026**  
 **Hours spent: 1hr 5mins**  
-**What I did: Decided on using ChatGPT to generate questions (MCQ, True/False, and Fill Blank), stored them in separate subject JSON file**  
+**What I did: Decided on using ChatGPT to generate questions (MCQ, True/False, and Fill Blank), stored them in separate subject JSON files (20 for each)**  
 **What I learned: AI prompting, how SRS (Spaced Repetition Systems) works and how to implement it into questions**
 
 ## Week 11
 
 **Date: Sun 8th Mar 2026**  
 **Hours spent: 1hr 10mins**  
-**What I did: Started updating quiz logic for new questions - fetching from multiple JSON files + handling different input types** 
+**What I did: Started updating quiz logic for new questions - fetching from multiple JSON files + handling different input types**  
 **What I learned: '?' operator in JS, text inputs (HTML), .trim() and .focus() in JS, how to check if a key is pressed using event listeners**
 
 ## Week 12
 
 **Date: Sun 15th Mar 2026**  
 **Hours spent: 1hr 10mins**  
-**What I did: Continued updating quiz logic - selecting and marking answers,
-for text input --> combining main and acceptable answers into array to check** 
+**What I did: Continued updating quiz logic - selecting and marking answers, for text input --> combining main and acceptable answers into array to check**  
 **What I learned: event, event.target, '||' operator, '&&', dataset, .some(), classList, and '...array' structure (to combine arrays) in JS**
