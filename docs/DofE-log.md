@@ -39,7 +39,7 @@
 
 **Date: Sun 23rd Nov 2025**  
 **Hours spent: 1hr**  
-**What I did: Coninued news page Javascript, implemented logic for JS toggle to work, made more sample news, added topics/categories to quiz page**  
+**What I did: Continued news page Javascript, implemented logic for JS toggle to work, made more sample news, added topics/categories to quiz page**  
 **What I learned: Logic for a Javascript toggle (same page, hiding and displaying data), filter function in JS, data- attribute in HTML, select in HTML**
 
 ## Week 7
@@ -67,7 +67,7 @@
 
 **Date: Sun 1st Mar 2026**  
 **Hours spent: 1hr 5mins**  
-**What I did: Decided on using ChatGPT to generate questions (MCQ, True/False, and Fill Blank), stored them in separate subject JSON files (20 for each** 
+**What I did: Decided on using ChatGPT to generate questions (MCQ, True/False, and Fill Blank), stored them in separate subject JSON file** 
 **What I learned: AI prompting, how SRS (Spaced Repetition Systems) works and how to implement it into questions**
 
 ## Week 11
