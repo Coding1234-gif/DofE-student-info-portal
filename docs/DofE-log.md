@@ -67,8 +67,7 @@
 
 **Date: Sun 1st Mar 2026**  
 **Hours spent: 1hr 5mins**  
-**What I did: Decided on using ChatGPT to generate questions (MCQ, True/False, and Fill Blank),
-stored them in separate subject JSON files (20 for each)** 
+**What I did: Decided on using ChatGPT to generate questions (MCQ, True/False, and Fill Blank), stored them in separate subject JSON files (20 for each** 
 **What I learned: AI prompting, how SRS (Spaced Repetition Systems) works and how to implement it into questions**
 
 ## Week 11
