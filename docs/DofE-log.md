@@ -83,3 +83,52 @@
 **Hours spent: 1hr 10mins**  
 **What I did: Continued updating quiz logic - selecting and marking answers, for text input --> combining main and acceptable answers into array to check**  
 **What I learned: event, event.target, '||' operator, '&&', dataset, .some(), classList, and '...array' structure (to combine arrays) in JS**
+
+## Week 13
+
+**Date: Sun 22nd Mar 2026**  
+**Hours spent: 1hr 10mins**  
+**What I did: Implemented SRS system into GCSE questions including: ease factor, interval, repetitions, real timings/days**  
+**What I learned: How to use SRS data in JS to set intervals and control each subject separately, how flashcard applications work**
+
+## Week 14
+
+**Date: Sun 29th Mar 2026**  
+**Hours spent: 1hr**  
+**What I did: Started the revision timetable page, generated table with ability to randomise or input your own plan, shows which day you are on**  
+**What I learned: How to use SRS data in JS to set intervals and control each subject separately, how flashcard applications work**
+
+## Week 15
+
+**Date: Sun 5th Apr 2026**  
+**Hours spent: 1hr 5mins**  
+**What I did: Made a popup screen to set exam date, difficulty and study hours with different types of input for each (with a button to add more subjects), in preparation for the next week**  
+**What I learned: How to make a popup screen using CSS (.hidden), how to clone objects in JS (cloneNode), how parents and children work in code, positioning elements using 'inset' and 'z-index'**
+
+## Week 16
+
+**Date: Sun 12th Apr 2026**  
+**Hours spent: 1hr 15mins**  
+**What I did: Implemented an urgency system for the timetable using data inputted by user - calculates urgency, then calculates no. of sessions needed for subject, then creates a list of sessions which is then randomly shuffled, finally creates timetable**  
+**What I learned: How to use date input in HTML, how to randomly shuffle lists, how to calculate and use priorities to sort lists and allocate sessions**
+
+## Week 17
+
+**Date: Sun 19th Apr 2026**  
+**Hours spent: 1hr**  
+**What I did: Finished the urgency system - fixed bugs with study hours and table cells, allowed user to enter a revision start time and alerted if not enough hours in the table**  
+**What I learned: .push(), alert(), how to make each time correspond to one row, the logic behind filling each table cell based on the study hours, how to allocate remaining sessions to prioritised subjects**
+
+## Week 18
+
+**Date: Sun 26th Apr 2026**  
+**Hours spent: 1hr**  
+**What I did: Debugged Quiz page (quiz.js), making sure everything was running smoothly and the errors such as questions not loading were completely removed, tested edge cases**  
+**What I learned: How to properly debug JS logic (e.g. using console.log() to find errors and missing values, showing popup alerts when inputs are invalid, etc.), how to test edge cases**
+
+## Week 19
+
+**Date: Sun 3rd May 2026**  
+**Hours spent: 1hr**  
+**What I did: Debugged News page (news.js) --> Fixed problems including news not loading because of incorrect serach parameters for News API, Debugged Revision page (revision.js) --> Fixed excess hours per day, tested edge cases such as invalid start times and study hours, no date entered, etc. and added code accordingly**  
+**What I learned: How to properly debug JS logic (e.g. using console.log() to find errors and missing values, showing popup alerts when inputs are invalid, etc.), how to test edge cases**
