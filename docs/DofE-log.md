@@ -132,3 +132,38 @@
 **Hours spent: 1hr**  
 **What I did: Debugged News page (news.js) --> Fixed problems including news not loading because of incorrect serach parameters for News API, Debugged Revision page (revision.js) --> Fixed excess hours per day, tested edge cases such as invalid start times and study hours, no date entered, etc. and added code accordingly**  
 **What I learned: How to properly debug JS logic (e.g. using console.log() to find errors and missing values, showing popup alerts when inputs are invalid, etc.), how to test edge cases**
+
+## Week 20
+
+**Date: Sun 10th May 2026**  
+**Hours spent: 1hr**  
+**What I did: Made new Pomodoro Timer page (html and started javascript logic) --> Work/Break sessions, timer, custom times, start/pause/reset buttons, switching between sessions, storing no. sessions completed in localStorage**  
+**What I learned: How to make circles in HTML, how to use clearInterval() and setInterval() in JS to control the timer**
+
+## Week 21
+
+**Date: Sun 17th May 2026**  
+**Hours spent: 1hr**  
+**What I did: Finished Pomodoro Timer page Javascript logic, and started the page's CSS --> updating the circle and timer, playing alarm sound, styling (background, DIVs and buttons)**  
+**What I learned: Blurring values, using <audio> in HTML, how to translate elements using CSS, how to create linear gradients in CSS**
+
+## Week 22
+
+**Date: Sun 24th May 2026**  
+**Hours spent: 1hr**  
+**What I did: Finished Pomodoro Timer page CSS styling, fixed bugs including DIVs not blurring, timer circle not updating, CSS classes causing website-wide errors**  
+**What I learned: How to make a circle timer's coloured section decrease, opaque elements not allowing blurring, 'stroke-dashoffset'**
+
+## Week 23
+
+**Date: Sun 31th May 2026**  
+**Hours spent: 1hr 5mins**  
+**What I did: Made the whole website look better and less plain using CSS (added to the whole website's stylesheet), to provide a better UI and UX, e.g. added a gradient for background and individual DIV cards**  
+**What I learned: Overall CSS (including more advanced technqiues), how to effectively style pages to make them look nice/professional and function properly**
+
+## Week 24
+
+**Date: Sun 7th Jun 2026**  
+**Hours spent: 1hr 5mins**  
+**What I did: First week of testing --> asked others to test my website, took constructive feedback and implemented the required improvements into the code - real user interaction and comments**  
+**What I learned: How to take constructive criticism and use it to improve**
