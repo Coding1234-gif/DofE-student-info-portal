@@ -11,8 +11,19 @@ if (toggleButtons.length > 0) {
 }
 
 async function loadNews(category = "general") {
-    const response = await fetch(`https://newsapi.org/v2/top-headlines?category=${category}&apiKey=${api_key}`);
+    const date = new Date(); // gets today's date
+    date.setDate(date.getDate() - 5); // gets date 5 days ago
+    const fromDate = date.toISOString().split('T')[0]; // converts date to YYYY-MM-DD format from ISO timestamp
+    let response;
     try {
+        if (category === 'all') {
+            response = await fetch(`https://newsapi.org/v2/everything?from=${fromDate}&apiKey=${api_key}`);
+        } else if (category === 'school') {
+            response = await fetch(`https://newsapi.org/v2/everything?q=school OR education OR GCSE OR A-level OR exam OR students OR university&from=${fromDate}&apiKey=${api_key}`);
+        } else {
+            response = await fetch(`https://newsapi.org/v2/top-headlines?category=${category}&from=${fromDate}&apiKey=${api_key}`);
+        }
+
         const newsData = await response.json();
         console.log('News data loaded:', newsData);
         if (newsData.articles) {
@@ -34,7 +45,7 @@ function handleToggleClick(event) {
 }
 
 function displayNews(articles) {
-    newsContainer.innerHTML = "";
+    newsContainer.innerHTML = '';
     articles.forEach(news => {
         newsContainer.innerHTML += `
             <div class="news-card">

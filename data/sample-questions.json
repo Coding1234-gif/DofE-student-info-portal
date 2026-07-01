@@ -1,62 +1,62 @@
 [
   {
-    "question": "What is the capital of France?",
-    "answers": ["Berlin","Madrid","Paris","Rome"],
-    "correctAnswer": "Paris",
-    "topic": "geography"
-  },
-  {
-    "question": "Which planet is known as the Red Planet?",
-    "answers": ["Earth","Mars","Jupiter","Venus"],
-    "correctAnswer": "Mars",
-    "topic": "physics"
-  },
-  {
-    "question": "What is the capital of Germany?",
-    "answers": ["Berlin","Madrid","Paris","Rome"],
-    "correctAnswer": "Berlin",
-    "topic": "geography"
-  },
-  {
-    "question": "What is the capital of Italy?",
-    "answers": ["Berlin","Madrid","Paris","Rome"],
-    "correctAnswer": "Rome",
-    "topic": "geography"
-  },
-  {
-    "question": "What is the capital of Spain?",
-    "answers": ["Berlin","Madrid","Paris","Rome"],
-    "correctAnswer": "Madrid",
-    "topic": "geography"
-  },
-  {
-    "question": "If x+1/x = 4, what is x^2+1/x^2?",
-    "answers": [12,14,16,18],
-    "correctAnswer": 14,
-    "topic": "maths"
-  },
-  {
-    "question": "Which figurative language device is used in the following sentence: 'The sun was a blazing furnace'?",
-    "answers": ["Simile","Metaphor","Personification","Alliteration"],
-    "correctAnswer": "Metaphor",
-    "topic": "english"
-  },
-  {
-    "question": "When was the Battle of Hastings?",
-    "answers": ["1066","1067","1068","1069"],
-    "correctAnswer": "1066",
-    "topic": "history"
-  },
-  {
     "question": "What is the largest internal organ in the human body?",
-    "answers": ["Heart","Brain","Liver","Stomach"],
-    "correctAnswer": "Liver",
+    "options": ["Heart","Brain","Liver","Stomach"],
+    "answer": "Liver",
     "topic": "biology"
   },
   {
     "question": "What is the chemical symbol for sodium?",
-    "answers": ["Na","K","Ca","Mg"],
-    "correctAnswer": "Na",
+    "options": ["Na","K","Ca","Mg"],
+    "answer": "Na",
     "topic": "chemistry"
+  },
+  {
+    "question": "Which figurative language device is used in the following sentence: 'The sun was a blazing furnace'?",
+    "options": ["Simile","Metaphor","Personification","Alliteration"],
+    "answer": "Metaphor",
+    "topic": "english"
+  },
+  {
+    "question": "What is the capital of France?",
+    "options": ["Berlin","Madrid","Paris","Rome"],
+    "answer": "Paris",
+    "topic": "geography"
+  },
+  {
+    "question": "What is the capital of Germany?",
+    "options": ["Berlin","Madrid","Paris","Rome"],
+    "answer": "Berlin",
+    "topic": "geography"
+  },
+  {
+    "question": "What is the capital of Italy?",
+    "options": ["Berlin","Madrid","Paris","Rome"],
+    "answer": "Rome",
+    "topic": "geography"
+  },
+  {
+    "question": "What is the capital of Spain?",
+    "options": ["Berlin","Madrid","Paris","Rome"],
+    "answer": "Madrid",
+    "topic": "geography"
+  },
+  {
+    "question": "When was the Battle of Hastings?",
+    "options": ["1066","1067","1068","1069"],
+    "answer": "1066",
+    "topic": "history"
+  },
+  {
+    "question": "If x+1/x = 4, what is x^2+1/x^2?",
+    "options": [12,14,16,18],
+    "answer": 14,
+    "topic": "maths"
+  },
+  {
+    "question": "Which planet is known as the Red Planet?",
+    "options": ["Earth","Mars","Jupiter","Venus"],
+    "answer": "Mars",
+    "topic": "physics"
   }
 ]

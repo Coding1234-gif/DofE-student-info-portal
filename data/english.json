@@ -1,0 +1,345 @@
+[
+  {
+    "id": "eng_001",
+    "subject": "English",
+    "type": "mcq",
+    "topic": "Language Techniques",
+    "subtopic": "Simile",
+    "question": "What is a simile?",
+    "options": [
+      "A comparison using like or as",
+      "An exaggeration",
+      "A repetition of sounds",
+      "A list of three"
+    ],
+    "answer": "A comparison using like or as",
+    "acceptable_answers": null,
+    "explanation": "Similes compare using 'like' or 'as'.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["techniques"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+  {
+    "id": "eng_002",
+    "subject": "English",
+    "type": "fill_blank",
+    "topic": "Language Techniques",
+    "subtopic": "Metaphor",
+    "question": "A metaphor is a ______ without using like or as.",
+    "answer": ["comparison"],
+    "acceptable_answers": ["comparison between things"],
+    "explanation": "Metaphors compare directly.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["techniques"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+  {
+    "id": "eng_003",
+    "subject": "English",
+    "type": "true_false",
+    "topic": "Language Techniques",
+    "subtopic": "Personification",
+    "question": "Personification gives human qualities to non-human things.",
+    "answer": true,
+    "explanation": "This is the definition of personification.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["techniques"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "eng_004",
+    "subject": "English",
+    "type": "mcq",
+    "topic": "Language Techniques",
+    "subtopic": "Hyperbole",
+    "question": "What is hyperbole?",
+    "options": [
+      "Understatement",
+      "Exaggeration",
+      "Comparison",
+      "Repetition"
+    ],
+    "answer": "Exaggeration",
+    "explanation": "Hyperbole is deliberate exaggeration.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["techniques"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+  {
+    "id": "eng_005",
+    "subject": "English",
+    "type": "fill_blank",
+    "topic": "Structure",
+    "subtopic": "Narrative",
+    "question": "The beginning of a story is called the ______.",
+    "answer": ["opening"],
+    "acceptable_answers": ["introduction"],
+    "explanation": "Stories usually start with an opening.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["structure"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+  {
+    "id": "eng_006",
+    "subject": "English",
+    "type": "true_false",
+    "topic": "Structure",
+    "subtopic": "Climax",
+    "question": "The climax is the most intense part of a story.",
+    "answer": true,
+    "explanation": "The climax is the turning point.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["structure"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "eng_007",
+    "subject": "English",
+    "type": "mcq",
+    "topic": "Writing Skills",
+    "subtopic": "Persuasive",
+    "question": "Which technique is used in persuasive writing?",
+    "options": [
+      "Facts only",
+      "Emotive language",
+      "Random ideas",
+      "No structure"
+    ],
+    "answer": "Emotive language",
+    "explanation": "Persuasive writing uses emotion to influence.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["writing"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+  {
+    "id": "eng_008",
+    "subject": "English",
+    "type": "fill_blank",
+    "topic": "Writing Skills",
+    "subtopic": "Audience",
+    "question": "The intended reader is called the ______.",
+    "answer": ["audience"],
+    "acceptable_answers": [],
+    "explanation": "Audience is who the text is for.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["writing"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+  {
+    "id": "eng_009",
+    "subject": "English",
+    "type": "true_false",
+    "topic": "Writing Skills",
+    "subtopic": "Purpose",
+    "question": "Texts always have a purpose.",
+    "answer": true,
+    "explanation": "Every text is written for a reason.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["writing"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "eng_010",
+    "subject": "English",
+    "type": "mcq",
+    "topic": "Reading Skills",
+    "subtopic": "Inference",
+    "question": "What does inference mean?",
+    "options": [
+      "Reading between the lines",
+      "Copying text",
+      "Summarising",
+      "Guessing randomly"
+    ],
+    "answer": "Reading between the lines",
+    "explanation": "Inference uses clues to understand meaning.",
+    "difficulty": 2,
+    "marks": 1,
+    "tags": ["reading"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "eng_011",
+    "subject": "English",
+    "type": "fill_blank",
+    "topic": "Reading Skills",
+    "subtopic": "Analysis",
+    "question": "Quoting from the text is called using ______.",
+    "answer": ["evidence"],
+    "acceptable_answers": [],
+    "explanation": "Evidence supports analysis.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["reading"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "eng_012",
+    "subject": "English",
+    "type": "true_false",
+    "topic": "Reading Skills",
+    "subtopic": "Bias",
+    "question": "Bias means showing one-sided views.",
+    "answer": true,
+    "explanation": "Bias favours one perspective.",
+    "difficulty": 2,
+    "marks": 1,
+    "tags": ["reading"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "eng_013",
+    "subject": "English",
+    "type": "mcq",
+    "topic": "Literary Devices",
+    "subtopic": "Alliteration",
+    "question": "What is alliteration?",
+    "options": [
+      "Repetition of vowel sounds",
+      "Repetition of initial consonant sounds",
+      "A rhyme",
+      "A metaphor"
+    ],
+    "answer": "Repetition of initial consonant sounds",
+    "explanation": "Alliteration repeats starting sounds.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["devices"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "eng_014",
+    "subject": "English",
+    "type": "fill_blank",
+    "topic": "Literary Devices",
+    "subtopic": "Onomatopoeia",
+    "question": "Words that imitate sounds are called ______.",
+    "answer": ["onomatopoeia"],
+    "acceptable_answers": [],
+    "explanation": "E.g. 'buzz', 'bang'.",
+    "difficulty": 2,
+    "marks": 1,
+    "tags": ["devices"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "eng_015",
+    "subject": "English",
+    "type": "true_false",
+    "topic": "Literary Devices",
+    "subtopic": "Irony",
+    "question": "Irony is when the opposite of what is expected happens.",
+    "answer": true,
+    "explanation": "Irony involves contrast between expectation and reality.",
+    "difficulty": 2,
+    "marks": 1,
+    "tags": ["devices"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "eng_016",
+    "subject": "English",
+    "type": "mcq",
+    "topic": "Writing Skills",
+    "subtopic": "Tone",
+    "question": "What does tone refer to?",
+    "options": [
+      "Sentence length",
+      "Writer’s attitude",
+      "Number of paragraphs",
+      "Spelling"
+    ],
+    "answer": "Writer’s attitude",
+    "explanation": "Tone shows how the writer feels.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["writing"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "eng_017",
+    "subject": "English",
+    "type": "fill_blank",
+    "topic": "Writing Skills",
+    "subtopic": "Structure",
+    "question": "Paragraphs help organise ______.",
+    "answer": ["ideas"],
+    "acceptable_answers": ["information"],
+    "explanation": "Paragraphs structure writing clearly.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["writing"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "eng_018",
+    "subject": "English",
+    "type": "true_false",
+    "topic": "Writing Skills",
+    "subtopic": "Grammar",
+    "question": "Capital letters are used at the start of sentences.",
+    "answer": true,
+    "explanation": "This is a basic grammar rule.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["grammar"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "eng_019",
+    "subject": "English",
+    "type": "mcq",
+    "topic": "Reading Skills",
+    "subtopic": "Summary",
+    "question": "What is a summary?",
+    "options": [
+      "Detailed explanation",
+      "Short version of key points",
+      "Opinion",
+      "Story"
+    ],
+    "answer": "Short version of key points",
+    "explanation": "Summaries condense information.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["reading"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "eng_020",
+    "subject": "English",
+    "type": "fill_blank",
+    "topic": "Reading Skills",
+    "subtopic": "Skimming",
+    "question": "Quick reading to get the main idea is called ______.",
+    "answer": ["skimming"],
+    "acceptable_answers": [],
+    "explanation": "Skimming helps identify main ideas quickly.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["reading"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  }
+]

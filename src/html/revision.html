@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Revision Timetable</title>
+    <link href="../css/stylesheet.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Hello, User</h1>
+        <h2>Ready to start learning?</h2>
+    </header>
+    <nav id="primary-nav">
+        <a href="index.html">
+            <button class='main-button' type="button">Home</button>
+        </a>
+        <a href="quiz.html">
+            <button class='main-button' type="button">GCSE quiz questions</button>
+        </a>
+        <a href="news.html">
+            <button class='main-button' type="button">News feed</button>
+        </a>
+        <a href="revision.html">
+            <button class='main-button' type="button">Revision</button>
+        </a>
+        <a href="pomodoro.html">
+                <button class='main-button' type="button">Pomodoro</button>
+        </a>
+    </nav>
+    <main>
+        <h2>Revision timetable + resources</h2>
+        <button class="timetable-button" id="create-button" type="button">Create new</button>
+        <h3></h3>
+        <div class="revision-table">
+            <table>
+            <tr>
+                <th></th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+                <th>Sun</th>
+            </tr>
+            <tr>
+                <th>09:00</th>
+                <td>Maths</td>
+                <td>Maths</td>
+                <td>Geography</td>
+                <td>English</td>
+                <td>English</td>
+                <td>Biology</td>
+                <td>Geography</td>
+            </tr>
+            <tr>
+                <th>10:00</th>
+                <td>Maths</td>
+                <td>Maths</td>
+                <td>Geography</td>
+                <td>English</td>
+                <td>English</td>
+                <td>Biology</td>
+                <td>Geography</td>
+            </tr>
+            <tr>
+                <th>11:00</th>
+                <td>Maths</td>
+                <td>Maths</td>
+                <td>Geography</td>
+                <td>English</td>
+                <td>English</td>
+                <td>Biology</td>
+                <td>Geography</td>
+            </tr>
+            <tr>
+                <th>12:00</th>
+                <td>Maths</td>
+                <td>Maths</td>
+                <td>Geography</td>
+                <td>English</td>
+                <td>English</td>
+                <td>Biology</td>
+                <td>Geography</td>
+            </tr>
+            <tr>
+                <th>13:00</th>
+                <td>Maths</td>
+                <td>Maths</td>
+                <td>Geography</td>
+                <td>English</td>
+                <td>English</td>
+                <td>Biology</td>
+                <td>Geography</td>
+            </tr>
+            <tr>
+                <th>14:00</th>
+                <td>Maths</td>
+                <td>Maths</td>
+                <td>Geography</td>
+                <td>English</td>
+                <td>English</td>
+                <td>Biology</td>
+                <td>Geography</td>
+            </tr>
+            <tr>
+                <th>15:00</th>
+                <td>Maths</td>
+                <td>Maths</td>
+                <td>Geography</td>
+                <td>English</td>
+                <td>English</td>
+                <td>Biology</td>
+                <td>Geography</td>
+            </tr>
+            <tr>
+                <th>16:00</th>
+                <td>Maths</td>
+                <td>Maths</td>
+                <td>Geography</td>
+                <td>English</td>
+                <td>English</td>
+                <td>Biology</td>
+                <td>Geography</td>
+            </tr>
+            <tr>
+                <th>17:00</th>
+                <td>Maths</td>
+                <td>Maths</td>
+                <td>Geography</td>
+                <td>English</td>
+                <td>English</td>
+                <td>Biology</td>
+                <td>Geography</td>
+            </tr>
+        </table>
+        </div>
+
+        <div class="modal hidden" id="setupModal">
+
+            <div class="modal-content">
+
+                <h2>Revision Timetable Setup</h2>
+
+                <label>Study hours per day</label>
+                <input type="number" id="hours" min="1" max="8">
+
+                <label>Study start time</label>
+                <select id="startTime">
+                    <option value="0">09:00</option>
+                    <option value="1">10:00</option>
+                    <option value="2">11:00</option>
+                    <option value="3">12:00</option>
+                    <option value="4">13:00</option>
+                    <option value="5">14:00</option>
+                    <option value="6">15:00</option>
+                    <option value="7">16:00</option>
+                    <option value="8">17:00</option>
+                </select>
+
+                <div id="subjects">
+
+                    <div class="subject-row">
+
+                        <select class="subject">
+                            <option>Maths</option>
+                            <option>Biology</option>
+                            <option>Chemistry</option>
+                            <option>Physics</option>
+                            <option>Computer Science</option>
+                            <option>Geography</option>
+                            <option>Economics</option>
+                            <option>English</option>
+                        </select>
+
+                        <input type="date" class="exam-date">
+
+                        <select class="difficulty">
+                            <option value="1">Very confident</option>
+                            <option value="2">Confident</option>
+                            <option value="3">Average</option>
+                            <option value="4">Need practice</option>
+                            <option value="5">Really struggling</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <button class="timetable-button" id="addSubject">+ Add Subject</button>
+
+                <button class="timetable-button" id="generate">Generate Timetable</button>
+
+            </div>
+
+        </div>
+
+        <h2>DofE Student Info Portal</h2>
+        <p>This page will be for the revision timetable feature.
+            This is a work in progress and will be updated regularly.
+        </p>
+    </main>
+    <footer>
+        DofE Student Info Portal - 2025 - <a href="https://github.com/Coding1234-gif/DofE-student-info-portal"
+            target="_blank">GitHub</a>
+    </footer>
+    <script src="../javascript/revision.js"></script>
+</body>
+
+</html>

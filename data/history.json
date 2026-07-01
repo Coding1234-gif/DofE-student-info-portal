@@ -1,0 +1,340 @@
+[
+  {
+    "id": "hist_001",
+    "subject": "History",
+    "type": "mcq",
+    "topic": "World War I",
+    "subtopic": "Causes",
+    "question": "What event triggered World War I?",
+    "options": [
+      "Treaty of Versailles",
+      "Assassination of Archduke Franz Ferdinand",
+      "Russian Revolution",
+      "Battle of Somme"
+    ],
+    "answer": "Assassination of Archduke Franz Ferdinand",
+    "acceptable_answers": null,
+    "explanation": "The assassination in 1914 triggered the war.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["ww1"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+  {
+    "id": "hist_002",
+    "subject": "History",
+    "type": "fill_blank",
+    "topic": "World War I",
+    "subtopic": "Causes",
+    "question": "WWI began in ______.",
+    "answer": ["1914"],
+    "acceptable_answers": [],
+    "explanation": "The war started in 1914.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["ww1"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+  {
+    "id": "hist_003",
+    "subject": "History",
+    "type": "true_false",
+    "topic": "World War I",
+    "subtopic": "Alliances",
+    "question": "Britain was part of the Triple Alliance.",
+    "answer": false,
+    "explanation": "Britain was in the Triple Entente.",
+    "difficulty": 2,
+    "marks": 1,
+    "tags": ["ww1"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "hist_004",
+    "subject": "History",
+    "type": "mcq",
+    "topic": "World War I",
+    "subtopic": "Warfare",
+    "question": "What type of warfare dominated WWI on the Western Front?",
+    "options": ["Naval", "Trench", "Air", "Guerrilla"],
+    "answer": "Trench",
+    "explanation": "Trench warfare was the main strategy.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["ww1"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+  {
+    "id": "hist_005",
+    "subject": "History",
+    "type": "fill_blank",
+    "topic": "World War I",
+    "subtopic": "Warfare",
+    "question": "Soldiers lived in long ditches called ______.",
+    "answer": ["trenches"],
+    "acceptable_answers": [],
+    "explanation": "Trenches protected soldiers from enemy fire.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["ww1"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+  {
+    "id": "hist_006",
+    "subject": "History",
+    "type": "true_false",
+    "topic": "World War I",
+    "subtopic": "Technology",
+    "question": "Machine guns made warfare more deadly.",
+    "answer": true,
+    "explanation": "New weapons increased casualties.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["ww1"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "hist_007",
+    "subject": "History",
+    "type": "mcq",
+    "topic": "World War II",
+    "subtopic": "Causes",
+    "question": "Which treaty ended WWI?",
+    "options": [
+      "Treaty of Paris",
+      "Treaty of Versailles",
+      "Treaty of Rome",
+      "Treaty of Berlin"
+    ],
+    "answer": "Treaty of Versailles",
+    "explanation": "Signed in 1919, it ended WWI.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["ww2"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+  {
+    "id": "hist_008",
+    "subject": "History",
+    "type": "fill_blank",
+    "topic": "World War II",
+    "subtopic": "Causes",
+    "question": "WWII began in ______.",
+    "answer": ["1939"],
+    "acceptable_answers": [],
+    "explanation": "Germany invaded Poland in 1939.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["ww2"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+  {
+    "id": "hist_009",
+    "subject": "History",
+    "type": "true_false",
+    "topic": "World War II",
+    "subtopic": "Leaders",
+    "question": "Adolf Hitler was the leader of Germany.",
+    "answer": true,
+    "explanation": "Hitler led Nazi Germany.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["ww2"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "hist_010",
+    "subject": "History",
+    "type": "mcq",
+    "topic": "World War II",
+    "subtopic": "Events",
+    "question": "What was the Blitz?",
+    "options": [
+      "Naval attack",
+      "Bombing of British cities",
+      "Tank battle",
+      "Peace treaty"
+    ],
+    "answer": "Bombing of British cities",
+    "explanation": "Germany bombed UK cities during the Blitz.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["ww2"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "hist_011",
+    "subject": "History",
+    "type": "fill_blank",
+    "topic": "World War II",
+    "subtopic": "Events",
+    "question": "The Allied invasion of France in 1944 was called ______.",
+    "answer": ["D-Day"],
+    "acceptable_answers": ["d day", "D day", "d-day"],
+    "explanation": "D-Day marked the start of liberation of Europe.",
+    "difficulty": 2,
+    "marks": 1,
+    "tags": ["ww2"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "hist_012",
+    "subject": "History",
+    "type": "true_false",
+    "topic": "World War II",
+    "subtopic": "Outcome",
+    "question": "WWII ended in 1945.",
+    "answer": true,
+    "explanation": "The war ended after Germany and Japan surrendered.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["ww2"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "hist_013",
+    "subject": "History",
+    "type": "mcq",
+    "topic": "Cold War",
+    "subtopic": "Basics",
+    "question": "Who were the main Cold War rivals?",
+    "options": [
+      "UK and France",
+      "USA and USSR",
+      "Germany and Italy",
+      "China and Japan"
+    ],
+    "answer": "USA and USSR",
+    "explanation": "The Cold War was between USA and USSR.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["cold war"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "hist_014",
+    "subject": "History",
+    "type": "fill_blank",
+    "topic": "Cold War",
+    "subtopic": "Berlin",
+    "question": "The ______ Wall divided East and West Berlin.",
+    "answer": ["Berlin"],
+    "acceptable_answers": [],
+    "explanation": "Built in 1961.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["cold war"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "hist_015",
+    "subject": "History",
+    "type": "true_false",
+    "topic": "Cold War",
+    "subtopic": "Weapons",
+    "question": "The Cold War involved direct fighting between USA and USSR.",
+    "answer": false,
+    "explanation": "It was mainly indirect conflict.",
+    "difficulty": 2,
+    "marks": 1,
+    "tags": ["cold war"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "hist_016",
+    "subject": "History",
+    "type": "mcq",
+    "topic": "Medicine Through Time",
+    "subtopic": "Public Health",
+    "question": "Who improved sanitation in London?",
+    "options": [
+      "Edward Jenner",
+      "John Snow",
+      "Florence Nightingale",
+      "Louis Pasteur"
+    ],
+    "answer": "John Snow",
+    "explanation": "He linked cholera to water.",
+    "difficulty": 2,
+    "marks": 1,
+    "tags": ["medicine"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "hist_017",
+    "subject": "History",
+    "type": "fill_blank",
+    "topic": "Medicine Through Time",
+    "subtopic": "Vaccines",
+    "question": "Edward Jenner developed the ______ vaccine.",
+    "answer": ["smallpox"],
+    "acceptable_answers": [],
+    "explanation": "First successful vaccine.",
+    "difficulty": 2,
+    "marks": 1,
+    "tags": ["medicine"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "hist_018",
+    "subject": "History",
+    "type": "true_false",
+    "topic": "Medicine Through Time",
+    "subtopic": "Germs",
+    "question": "Louis Pasteur developed germ theory.",
+    "answer": true,
+    "explanation": "He proved germs cause disease.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["medicine"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "hist_019",
+    "subject": "History",
+    "type": "mcq",
+    "topic": "Skills",
+    "subtopic": "Sources",
+    "question": "What makes a source reliable?",
+    "options": [
+      "Opinion",
+      "Bias",
+      "Evidence and accuracy",
+      "Length"
+    ],
+    "answer": "Evidence and accuracy",
+    "explanation": "Reliable sources are accurate and supported.",
+    "difficulty": 2,
+    "marks": 1,
+    "tags": ["skills"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "hist_020",
+    "subject": "History",
+    "type": "fill_blank",
+    "topic": "Skills",
+    "subtopic": "Interpretation",
+    "question": "Understanding different views of the past is called historical ______.",
+    "answer": ["interpretation"],
+    "acceptable_answers": [],
+    "explanation": "History can be viewed in different ways.",
+    "difficulty": 2,
+    "marks": 1,
+    "tags": ["skills"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  }
+]

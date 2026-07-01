@@ -1,0 +1,340 @@
+[
+  {
+    "id": "cs_001",
+    "subject": "Computer Science",
+    "type": "mcq",
+    "topic": "Systems Architecture",
+    "subtopic": "CPU",
+    "question": "What does CPU stand for?",
+    "options": [
+      "Central Processing Unit",
+      "Computer Personal Unit",
+      "Central Performance Unit",
+      "Control Processing Unit"
+    ],
+    "answer": "Central Processing Unit",
+    "acceptable_answers": null,
+    "explanation": "The CPU is the main processor of a computer.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["cpu"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+  {
+    "id": "cs_002",
+    "subject": "Computer Science",
+    "type": "fill_blank",
+    "topic": "Systems Architecture",
+    "subtopic": "Memory",
+    "question": "RAM stands for Random Access ______.",
+    "answer": ["memory"],
+    "acceptable_answers": [],
+    "explanation": "RAM is temporary volatile memory.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["memory"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+  {
+    "id": "cs_003",
+    "subject": "Computer Science",
+    "type": "true_false",
+    "topic": "Systems Architecture",
+    "subtopic": "Memory",
+    "question": "ROM is volatile memory.",
+    "answer": false,
+    "explanation": "ROM is non-volatile.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["memory"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "cs_004",
+    "subject": "Computer Science",
+    "type": "mcq",
+    "topic": "Data Representation",
+    "subtopic": "Binary",
+    "question": "What is the binary for 5?",
+    "options": ["101", "110", "111", "100"],
+    "answer": "101",
+    "explanation": "5 = 4 + 1 → 101 in binary.",
+    "difficulty": 2,
+    "marks": 1,
+    "tags": ["binary"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+  {
+    "id": "cs_005",
+    "subject": "Computer Science",
+    "type": "fill_blank",
+    "topic": "Data Representation",
+    "subtopic": "Binary",
+    "question": "Binary uses base ______.",
+    "answer": ["2"],
+    "acceptable_answers": [],
+    "explanation": "Binary is base 2.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["binary"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+  {
+    "id": "cs_006",
+    "subject": "Computer Science",
+    "type": "true_false",
+    "topic": "Data Representation",
+    "subtopic": "Units",
+    "question": "1 byte equals 8 bits.",
+    "answer": true,
+    "explanation": "A byte is made of 8 bits.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["units"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "cs_007",
+    "subject": "Computer Science",
+    "type": "mcq",
+    "topic": "Algorithms",
+    "subtopic": "Basics",
+    "question": "What is an algorithm?",
+    "options": [
+      "A type of hardware",
+      "A step-by-step procedure",
+      "A programming language",
+      "A data type"
+    ],
+    "answer": "A step-by-step procedure",
+    "explanation": "Algorithms are instructions to solve problems.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["algorithms"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+  {
+    "id": "cs_008",
+    "subject": "Computer Science",
+    "type": "fill_blank",
+    "topic": "Algorithms",
+    "subtopic": "Flowcharts",
+    "question": "A diamond shape in a flowchart represents a ______.",
+    "answer": ["decision"],
+    "acceptable_answers": [],
+    "explanation": "Diamonds show decision points.",
+    "difficulty": 2,
+    "marks": 1,
+    "tags": ["flowcharts"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+  {
+    "id": "cs_009",
+    "subject": "Computer Science",
+    "type": "true_false",
+    "topic": "Algorithms",
+    "subtopic": "Logic",
+    "question": "An infinite loop will stop on its own.",
+    "answer": false,
+    "explanation": "Infinite loops run indefinitely unless stopped.",
+    "difficulty": 2,
+    "marks": 1,
+    "tags": ["loops"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "cs_010",
+    "subject": "Computer Science",
+    "type": "mcq",
+    "topic": "Programming",
+    "subtopic": "Variables",
+    "question": "What is a variable?",
+    "options": [
+      "A fixed value",
+      "A storage location for data",
+      "A type of loop",
+      "A programming error"
+    ],
+    "answer": "A storage location for data",
+    "explanation": "Variables store data that can change.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["variables"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "cs_011",
+    "subject": "Computer Science",
+    "type": "fill_blank",
+    "topic": "Programming",
+    "subtopic": "Loops",
+    "question": "A ______ loop repeats while a condition is true.",
+    "answer": ["while"],
+    "acceptable_answers": [],
+    "explanation": "While loops depend on conditions.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["loops"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "cs_012",
+    "subject": "Computer Science",
+    "type": "true_false",
+    "topic": "Programming",
+    "subtopic": "Logic",
+    "question": "An IF statement is used for decision making.",
+    "answer": true,
+    "explanation": "IF statements control program flow.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["if"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "cs_013",
+    "subject": "Computer Science",
+    "type": "mcq",
+    "topic": "Networks",
+    "subtopic": "Types",
+    "question": "What does LAN stand for?",
+    "options": [
+      "Large Area Network",
+      "Local Area Network",
+      "Long Access Network",
+      "Limited Area Network"
+    ],
+    "answer": "Local Area Network",
+    "explanation": "LAN is a network in a small area.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["networks"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "cs_014",
+    "subject": "Computer Science",
+    "type": "fill_blank",
+    "topic": "Networks",
+    "subtopic": "Internet",
+    "question": "IP stands for Internet ______.",
+    "answer": ["protocol"],
+    "acceptable_answers": [],
+    "explanation": "IP is Internet Protocol.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["networks"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "cs_015",
+    "subject": "Computer Science",
+    "type": "true_false",
+    "topic": "Networks",
+    "subtopic": "Security",
+    "question": "Encryption makes data unreadable without a key.",
+    "answer": true,
+    "explanation": "Encryption protects data security.",
+    "difficulty": 2,
+    "marks": 1,
+    "tags": ["security"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "cs_016",
+    "subject": "Computer Science",
+    "type": "mcq",
+    "topic": "Cyber Security",
+    "subtopic": "Threats",
+    "question": "What is phishing?",
+    "options": [
+      "Fishing online",
+      "A cyber attack to steal data",
+      "A type of virus",
+      "A firewall"
+    ],
+    "answer": "A cyber attack to steal data",
+    "explanation": "Phishing tricks users into giving information.",
+    "difficulty": 2,
+    "marks": 1,
+    "tags": ["security"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "cs_017",
+    "subject": "Computer Science",
+    "type": "fill_blank",
+    "topic": "Cyber Security",
+    "subtopic": "Protection",
+    "question": "A ______ protects a network from unauthorised access.",
+    "answer": ["firewall"],
+    "acceptable_answers": [],
+    "explanation": "Firewalls block malicious traffic.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["security"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "cs_018",
+    "subject": "Computer Science",
+    "type": "true_false",
+    "topic": "Cyber Security",
+    "subtopic": "Malware",
+    "question": "A virus can replicate itself.",
+    "answer": true,
+    "explanation": "Viruses spread by copying themselves.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["malware"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "cs_019",
+    "subject": "Computer Science",
+    "type": "mcq",
+    "topic": "Ethics",
+    "subtopic": "Legal",
+    "question": "What is hacking without permission?",
+    "options": [
+      "Legal",
+      "Ethical",
+      "Illegal",
+      "Safe"
+    ],
+    "answer": "Illegal",
+    "explanation": "Unauthorised access is against the law.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["ethics"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  },
+
+  {
+    "id": "cs_020",
+    "subject": "Computer Science",
+    "type": "fill_blank",
+    "topic": "Programming",
+    "subtopic": "Data Types",
+    "question": "Whole numbers are stored as ______ data type.",
+    "answer": ["integer"],
+    "acceptable_answers": ["int"],
+    "explanation": "Integers store whole numbers.",
+    "difficulty": 1,
+    "marks": 1,
+    "tags": ["data types"],
+    "srs": { "repetitions": 0, "ease_factor": 2.5, "interval": 0, "last_review": null, "next_review": null }
+  }
+]

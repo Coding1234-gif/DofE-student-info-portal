@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pomodoro Timer</title>
+    <link href="../css/stylesheet.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+
+<body id="pom-body">
+    <header>
+        <h1>Hello, User</h1>
+        <h2>Ready to start learning?</h2>
+    </header>
+    <nav id="primary-nav">
+        <a href="index.html">
+            <button class='main-button' type="button">Home</button>
+        </a>
+        <a href="quiz.html">
+            <button class='main-button' type="button">GCSE quiz questions</button>
+        </a>
+        <a href="news.html">
+            <button class='main-button' type="button">News feed</button>
+        </a>
+        <a href="revision.html">
+            <button class='main-button' type="button">Revision</button>
+        </a>
+        <a href="pomodoro.html">
+                <button class='main-button' type="button">Pomodoro</button>
+        </a>
+    </nav>
+    <main>
+
+        <div class="pom-container">
+
+            <h1 class="pom-h1">🍅 Pomodoro Timer</h1>
+
+            <div class="timer-card">
+
+                <div class="mode" id="mode">Work Session</div>
+
+                <div class="progress-circle">
+
+                    <svg width="280" height="280">
+
+                        <circle
+                            class="background-circle"
+                            cx="140"
+                            cy="140"
+                            r="120">
+                        </circle>
+
+                        <circle
+                            class="progress"
+                            id="progress"
+                            cx="140"
+                            cy="140"
+                            r="120">
+                        </circle>
+
+                    </svg>
+
+                    <div class="time" id="timer">
+                        25:00
+                    </div>
+
+                </div>
+
+                <div class="controls">
+
+                    <button id="startBtn">Start</button>
+
+                    <button id="pauseBtn">Pause</button>
+
+                    <button id="resetBtn">Reset</button>
+
+                </div>
+
+            </div>
+
+            <div class="settings">
+
+                <div class="setting">
+
+                    <label for="workTime">Work (minutes)</label>
+
+                    <input
+                        type="number"
+                        id="workTime"
+                        value="25"
+                        min="1"
+                        max="120">
+
+                </div>
+
+                <div class="setting">
+
+                    <label for="breakTime">Break (minutes)</label>
+
+                    <input
+                        type="number"
+                        id="breakTime"
+                        value="5"
+                        min="1"
+                        max="60">
+
+                </div>
+
+            </div>
+
+            <div class="stats">
+
+                <h2 class="pom-progress-h2">Today's Progress</h2>
+
+                <div class="sessions">
+                    Completed Sessions:
+                    <span id="sessionCount">0</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <audio id="alarm">
+            <source src="alarm.mp3" type="audio/mpeg">
+        </audio>
+
+        <h2 class="pom-h2">DofE Student Info Portal</h2>
+        <p>This page will be for the Pomodoro Timer. This is a work in progress and will be updated regularly.</p>
+    </main>
+    <footer>
+        DofE Student Info Portal - 2025 - <a href="https://github.com/Coding1234-gif/DofE-student-info-portal" target="_blank">GitHub</a>
+    </footer>
+    <script src="../javascript/main.js"></script>
+    <script src="../javascript/pomodoro.js"></script>
+</body>
+
+</html>

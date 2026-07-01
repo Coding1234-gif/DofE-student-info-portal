@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Edexcel GCSE Physics Flashcards</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f7f6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 10px;
+        }
+        .container {
+            width: 100%;
+            max-width: 580px;
+            text-align: center;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+        }
+        .header-info {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .progress-bar {
+            width: 100%;
+            background-color: #e0e0e0;
+            height: 6px;
+            border-radius: 3px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .progress-fill {
+            height: 100%;
+            background-color: #2b7a78;
+            width: 1.66%;
+            transition: width 0.3s ease;
+        }
+        .flashcard-wrapper {
+            perspective: 1000px;
+            width: 100%;
+            height: 280px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        .flashcard {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            border-radius: 12px;
+        }
+        .flashcard.flipped {
+            transform: rotateY(180deg);
+        }
+        .card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 25px;
+            box-sizing: border-box;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        .card-front {
+            background-color: #ffffff;
+            border: 2.5px solid #2b7a78;
+            color: #17252a;
+        }
+        .card-back {
+            background-color: #2b7a78;
+            color: #ffffff;
+            transform: rotateY(180deg);
+            overflow-y: auto;
+        }
+        .topic-badge {
+            position: absolute;
+            top: 12px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            padding: 4px 12px;
+            border-radius: 20px;
+        }
+        .card-front .topic-badge {
+            background-color: #def2f1;
+            color: #2b7a78;
+        }
+        .card-back .topic-badge {
+            background-color: #17252a;
+            color: #3aafa9;
+        }
+        .card-text {
+            font-size: 1.15rem;
+            font-weight: 500;
+            line-height: 1.45;
+            white-space: pre-line;
+        }
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        button {
+            flex: 1;
+            padding: 12px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .btn-prev {
+            background-color: #def2f1;
+            color: #2b7a78;
+        }
+        .btn-prev:hover { background-color: #bfe3e2; }
+        .btn-shuffle {
+            background-color: #17252a;
+            color: #ffffff;
+            max-width: 60px;
+        }
+        .btn-shuffle:hover { background-color: #000000; }
+        .btn-next {
+            background-color: #2b7a78;
+            color: #ffffff;
+        }
+        .btn-next:hover { background-color: #1a5150; }
+        .hint-text {
+            font-size: 0.8rem;
+            color: #888;
+            margin-top: 12px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header-info">
+        <h3 style="margin: 0 0 4px 0; color: #17252a;">GCSE Edexcel Physics Paper 1 Master Console</h3>
+        <span id="card-counter" style="font-weight: bold; color: #666; font-size: 0.9rem;">Card 1 of 60</span>
+    </div>
+
+    <div class="progress-bar">
+        <div id="progress-fill" class="progress-fill"></div>
+    </div>
+
+    <div class="flashcard-wrapper" onclick="flipCard()">
+        <div id="flashcard" class="flashcard">
+            <div class="card-face card-front">
+                <div id="topic-front" class="topic-badge">Topic</div>
+                <div id="text-front" class="card-text">Loading...</div>
+            </div>
+            <div class="card-face card-back">
+                <div id="topic-back" class="topic-badge">Topic</div>
+                <div id="text-back" class="card-text">Loading...</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button class="btn-prev" onclick="prevCard(event)">⬅️ Prev</button>
+        <button class="btn-shuffle" title="Shuffle Deck" onclick="shuffleDeck(event)">🔀</button>
+        <button class="btn-next" onclick="nextCard(event)">Next ➡️</button>
+    </div>
+    <div class="hint-text">💡 Tap the card to flip it over! Click 🔀 to randomize.</div>
+</div>
+
+<script>
+    const masterDeck = [
+        // --- SECTION 1: WAVES & EM SPECTRUM (2024 PAPER INSPIRED) ---
+        { topic: "EM Spectrum", q: "What basic wave structure do X-rays and microwaves share, and what is their velocity in empty space?", a: "They are both transverse waves.\nThey both travel at the speed of light (3 × 10⁸ m/s) in a vacuum." },
+        { topic: "EM Spectrum Comparison", q: "Compare X-rays to microwaves in terms of frequency and wavelength.", a: "X-rays have a much higher frequency and a much shorter wavelength than microwaves." },
+        { topic: "EM Spectrum Uses", q: "State which electromagnetic wave is used for:\n1. Human sight\n2. Drone/Aerial transmissions\n3. Counterfeit banknote checks", a: "1. Visible light\n2. Radio waves (or Microwaves)\n3. Ultraviolet (UV) light" },
+        { topic: "Light Filters", q: "A flag has Red, Green, and Blue patches. Why do the green and red areas appear black when viewed through a pure Blue filter?", a: "The blue filter only transmits blue light.\nIt absorbs the red and green wavelengths, leaving no light to reflect off those parts." },
+        { topic: "Converging Lenses", q: "Describe the nature of an image formed on a screen by a converging lens from a highly distant object.", a: "The image is real, inverted (upside down), and diminished (smaller)." },
+        { topic: "Lens Power Profile", q: "If Lens A is thicker and more curved than Lens B, how do its focal length and power compare?", a: "Lens A has a shorter focal length and a greater optical power." },
+        { topic: "Reflection Types", q: "Contrast the light reflection off a dry mirror versus a mirror covered in fine mist droplets.", a: "Dry mirror: Specular reflection (parallel rays stay parallel, clear image).\nMisty mirror: Diffuse reflection (rays scatter randomly, blurry image)." },
+        { topic: "Sound Properties", q: "What do sound waves transport from a vibrating speaker to your ear, and what do they leave behind?", a: "They transport energy and information.\nThey do NOT transport the air particles themselves." },
+        { topic: "Sound & Amplitude", q: "If an audio amplifier causes a sound wave to become significantly louder, what physical property has grown?", a: "The wave's Amplitude." },
+        { topic: "The Wave Equation", q: "Write down the key formula linking speed, frequency, and wavelength.", a: "Wave speed (v) = frequency (f) × wavelength (λ)" },
+        { topic: "Wave Terms", q: "Define the term 'Amplitude' using a water wave as an example.", a: "The maximum vertical displacement of a particle or wave crest from its undisturbed, rest position." },
+        { topic: "Wave Speed Field Test", q: "How can a student practically estimate the speed of surface ripples across a long outdoor trough?", a: "Measure the distance of the trough with a tape measure.\nTime a ripple crossing it with a stopwatch.\nCalculate: Speed = Distance ÷ Time." },
+        { topic: "Transverse Behavior", q: "Describe the motion of a cork floating on water as transverse ripples move horizontally underneath it.", a: "The cork bobbles purely up and down at right angles (perpendicular) to the energy flow." },
+        { topic: "Refraction Core", q: "What happens to the direction and speed of a light ray as it travels obliquely from air into a dense glass block?", a: "The light ray slows down and bends towards the normal line." },
+        { topic: "Refraction Wavefronts", q: "When entering a denser medium at an angle, why does a wave bend?", a: "Different parts of the wavefront slow down at different times, pulling the wave toward the normal." },
+
+        // --- SECTION 2: FORCES & MOTION (FOUNDATION TO HIGHER) ---
+        { topic: "Velocity-Time Data", q: "How is the total stopping distance extracted from a vehicle's Velocity-Time graph?", a: "By calculating the total area enclosed under the graph line down to the time axis." },
+        { topic: "Reaction Mechanics", q: "Why does an automated computerized brake asset beat an average human driver's stopping profile?", a: "The computer eliminates thinking distance because its response delay is nearly zero." },
+        { topic: "Friction Conditions", q: "Why must smart vehicles limit speed margins automatically when a rainfall sensor registers wet asphalt?", a: "Water cuts tire-road friction, expanding braking distance.\nSlowing down compensates to keep total stopping gap safe." },
+        { topic: "Scalar vs Vector", q: "What structural characteristic sets velocity apart from speed?", a: "Speed is scalar (size only).\nVelocity is a vector (size AND a defined direction)." },
+        { topic: "Acceleration Link", q: "State the equation connecting velocity shift, time interval, and acceleration.", a: "Acceleration (a) = (Final velocity [v] - Initial velocity [u]) ÷ Time taken (t)" },
+        { topic: "Timeless Motion Formula", q: "State the algebraic equation relating initial/final speeds, uniform acceleration, and distance covered.", a: "v² - u² = 2 × a × x\n(v=final speed, u=initial, a=acceleration, x=distance)" },
+        { topic: "Newton's Second Law", q: "What equation links net force, mass, and acceleration?", a: "Force (F) = Mass (m) × Acceleration (a)" },
+        { topic: "Weight vs Mass", q: "State the formula used to calculate weight, and name the instrument used to measure it.", a: "Weight (W) = Mass (m) × Gravitational field strength (g)\nMeasured using a newtonmeter (spring balance)." },
+        { topic: "Terminal Velocity Stages", q: "Explain the acceleration trends of a skydiver from the moment they jump out of an aircraft.", a: "1. Initially accelerates fast (weight is the only force).\n2. Acceleration drops as air resistance builds up.\n3. Acceleration becomes zero when air resistance equals weight (terminal velocity)." },
+        { topic: "Newton's First Law", q: "What happens to a moving object's velocity if the resultant force acting on it is exactly zero?", a: "It continues moving at a constant velocity (same speed and same direction)." },
+        { topic: "Newton's Third Law", q: "State Newton's third law of motion concerning interacting bodies.", a: "When two bodies interact, they exert forces on each other that are equal in magnitude and opposite in direction." },
+        { topic: "Momentum Formula", q: "Provide the calculation structure for linear momentum.", a: "Momentum (p) = Mass (m) × Velocity (v)" },
+        { topic: "Momentum Conservation", q: "What is the core rule of momentum inside a closed system during a crash?", a: "Total momentum before the collision equals the total momentum after the collision." },
+        { topic: "HT: Impact Forces", q: "State the equation relating force to momentum change over time.", a: "Force (F) = Change in momentum (Δmv) ÷ Time taken (t)" },
+        { topic: "Thinking vs Braking", q: "Identify one factor that increases thinking distance, and one factor that increases braking distance.", a: "Thinking: Alcohol, drugs, tiredness, distractions.\nBraking: Icy roads, worn tires, worn brakes, higher car mass." },
+
+        // --- SECTION 3: ENERGY TRANSFERS & CONSERVATION ---
+        { topic: "GPE Math", q: "State the formula used to compute gravitational potential energy adjustments.", a: "ΔGPE = mass (m) × gravitational field strength (g) × change in height (Δh)" },
+        { topic: "Kinetic Energy Math", q: "State the formula for kinetic energy.", a: "Kinetic Energy (KE) = 0.5 × mass (m) × (speed)²" },
+        { topic: "Dissipation Event", q: "A skater drops down a ramp losing 1000J of GPE but only logs 960J of KE. Explain the missing 40J.", a: "40J was transferred as wasted thermal energy to the surroundings due to work done against friction." },
+        { topic: "Efficiency Metric", q: "Provide the ratio equation used to quantify system efficiency.", a: "Efficiency = Useful energy output ÷ Total energy input\n(Can be multiplied by 100 for percentage)" },
+        { topic: "Sankey Diagrams", q: "On a Sankey diagram, how is the size of an energy pathway represented?", a: "By the width of the arrow (thicker arrows mean more energy)." },
+        { topic: "Energy Stores", q: "Name four different energy stores.", a: "Kinetic, Gravitational Potential, Elastic Potential, Thermal, Chemical, Magnetic, Electrostatic, Nuclear." },
+        { topic: "Energy Pathways", q: "Name the four pathways by which energy can be transferred.", a: "Mechanically (by a force), Electrically, Heating, Radiation (waves)." },
+        { topic: "Power Calculation", q: "State the formula for power in terms of energy.", a: "Power (P) = Energy transferred (E) ÷ Time taken (t)" },
+        { topic: "Power Definition", q: "Define 'Power' in physics terms.", a: "The rate at which energy is transferred (or the rate at which work is done)." },
+        { topic: "Renewable vs Non-Renewable", q: "Define a renewable energy resource.", a: "An energy source that is being replenished at the same rate or faster than it is consumed, meaning it will never run out." },
+
+        // --- SECTION 4: ASTRONOMY & SPACE PHYSICS ---
+        { topic: "Star Equilibrium", q: "What internal forces duel to hold a main-sequence star stable?", a: "Inward force of gravity perfectly balances the outward thermal expansion pressure from fusion." },
+        { topic: "Orbital Vector Force", q: "What is the direction of the gravitational force vector operating on a craft in a circular orbit?", a: "It acts radially inwards, straight towards the center of the orbit." },
+        { topic: "Orbit & Velocity Acceleration", q: "Why is an orbital satellite moving at uniform speed described as accelerating?", a: "Velocity is a vector. The circular path continuously alters its direction, which means velocity is changing, creating acceleration." },
+        { topic: "Telescope Deployment", q: "Why are key deep-space telescopes launched into orbit rather than kept on mountain peaks?", a: "To eliminate light absorption, scattering, and atmospheric distortion caused by Earth's air layers." },
+        { topic: "Altitude vs Period", q: "How does altitude change affect a satellite's complete orbital period?", a: "Higher altitudes mean a longer orbital period (takes more time to complete one full loop)." },
+        { topic: "Solar System Evolution", q: "Distinguish between Geocentric and Heliocentric layout arguments.", a: "Geocentric: Earth-centered solar system (old model).\nHeliocentric: Sun-centered solar system (modern verified model)." },
+        { topic: "Star Life: Low Mass", q: "Outline the life cycle stages of a star with a mass similar to our Sun.", a: "Nebula ➔ Protostar ➔ Main Sequence Star ➔ Red Giant ➔ White Dwarf." },
+        { topic: "Star Life: High Mass", q: "Outline the life cycle stages of a star much larger than our Sun.", a: "Nebula ➔ Protostar ➔ Massive Main Sequence Star ➔ Red Supergiant ➔ Supernova ➔ Neutron Star or Black Hole." },
+        { topic: "Red-Shift Evidence", q: "What is Red-shift and what does it tell us about distant galaxies?", a: "The lengthening of light wavelengths from distant galaxies towards the red end of the spectrum.\nIt proves galaxies are moving away from us, showing the universe is expanding." },
+        { topic: "Big Bang Theories", q: "Name two pieces of evidence supporting the Big Bang Theory.", a: "1. Galactic Red-shift (expansion).\n2. Cosmic Microwave Background Radiation (CMBR)." },
+
+        // --- SECTION 5: EXTRA PAPER 1 EXTENSIONS (FORCES & WORK) ---
+        { topic: "Work Done formula", q: "State the equation for work done by a force.", a: "Work Done (E) = Force (F) × Distance moved in direction of force (d)" },
+        { topic: "Spring Extension", q: "State Hooke's Law formula.", a: "Force (F) = Spring constant (k) × Extension (x)" },
+        { topic: "Elastic Energy", q: "State the formula for energy stored in a stretched spring.", a: "Energy (E) = 0.5 × Spring constant (k) × (Extension)²" },
+        { topic: "Vector Examples", q: "Name three vector quantities.", a: "Force, Velocity, Displacement, Acceleration, Momentum." },
+        { topic: "Scalar Examples", q: "Name three scalar quantities.", a: "Speed, Distance, Mass, Energy, Time, Temperature." },
+        { topic: "Resultant Force Task", q: "A box experiences a 12 N force pulling it East, and a 4 N friction force pulling it West. What is the resultant force?", a: "8 N acting towards the East (12 - 4 = 8)." },
+        { topic: "Stopping Components", q: "State the full word equation for Total Stopping Distance.", a: "Stopping Distance = Thinking Distance + Braking Distance" },
+        { topic: "HT: Moments", q: "State the equation for a moment of a force.", a: "Moment = Force (F) × Perpendicular distance from the pivot (d)" },
+        { topic: "HT: Momentum Units", q: "What is the standard metric unit for measuring momentum?", a: "Kilogram meters per second (kg·m/s)." },
+        { topic: "Gravitational constant", q: "What is the approximate value of 'g' on Earth used in exam calculations?", a: "10 N/kg (or m/s²)." }
+    ];
+
+    let currentCards = [...masterDeck];
+    let index = 0;
+
+    function renderCard() {
+        const item = currentCards[index];
+        const cardElem = document.getElementById('flashcard');
+        cardElem.classList.remove('flipped');
+        
+        setTimeout(() => {
+            document.getElementById('topic-front').innerText = item.topic;
+            document.getElementById('topic-back').innerText = item.topic;
+            document.getElementById('text-front').innerText = item.q;
+            document.getElementById('text-back').innerText = item.a;
+            
+            document.getElementById('card-counter').innerText = `Card ${index + 1} of ${currentCards.length}`;
+            const progressPct = ((index + 1) / currentCards.length) * 100;
+            document.getElementById('progress-fill').style.width = `${progressPct}%`;
+        }, 120);
+    }
+
+    function flipCard() {
+        document.getElementById('flashcard').classList.toggle('flipped');
+    }
+
+    function nextCard(e) {
+        e.stopPropagation();
+        index = (index + 1) % currentCards.length;
+        renderCard();
+    }
+
+    function prevCard(e) {
+        e.stopPropagation();
+        index = (index - 1 + currentCards.length) % currentCards.length;
+        renderCard();
+    }
+
+    function shuffleDeck(e) {
+        e.stopPropagation();
+        // Fisher-Yates Shuffle algorithm
+        for (let i = currentCards.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [currentCards[i], currentCards[j]] = [currentCards[j], currentCards[i]];
+        }
+        index = 0;
+        renderCard();
+    }
+
+    // Load initial card layout
+    renderCard();
+</script>
+
+</body>
+</html>
